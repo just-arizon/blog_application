@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cross-env NODE_ENV=test node --test tests/list_helper.test.js"
   },
   "author": "Arinze Chinweuba",
   "license": "ISC",
@@ -17,5 +17,8 @@
     "mongoose": "^8.10.1",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.9"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }

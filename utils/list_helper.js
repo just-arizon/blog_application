@@ -21,6 +21,8 @@
     const topAuthor = Object.keys(authorLikes).reduce((maxAuthor, author) => {
       return authorLikes[author] > authorLikes[maxAuthor] ? author : maxAuthor;
     });
+
+  
   
     return {
       author: topAuthor,
